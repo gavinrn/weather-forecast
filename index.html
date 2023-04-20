@@ -4,51 +4,54 @@
     <title>Media Query for Screen</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <h1>This Header</h1>
-      <p>will change colors when the screen size hits 992px or smaller.</p>
-    </header>
+      <h1>Weather Dashboard</h1>
 
-    <!-- Navbar -->
-    <nav>
-      <p>
-        This Navbar will change colors when the screen size hits 768px or
-        smaller.
-      </p>
-    </nav>
+    </header>
 
     <!-- Body -->
     <main>
       <aside>
-        <h2>This is a sidebar.</h2>
-        <div class="sample-img">Image</div>
-        <p>When the screen size hits 576px or smaller...</p>
+        <h2>Search</h2>
+        <form>
+          <label for="city">Search:</label>
+          <input type="text" id="city" name="city">
+          <button type="button" class ="aside-button" onclick="submitForm()">Submit</button>
+        </form>
+        <h2>Recent Searches</h2>
+        <div id="search-history" class="search-container">
+
+        </div>
+        <div id="clear-history" class="search-container">
+          <button type="button" class ="aside-button" onclick="clearHistory()">Clear History</button>
+        </div>
+
       </aside>
 
       <section>
-        <h2>This is the body.</h2>
-        <div class="sample-img">Image</div>
-        <p>..all of the image placeholders will change colors!</p>
-        <br />
-        <h2>But the real problem is...</h2>
-        <div class="sample-img">Image</div>
-        <p>
-          What are we going to do about the sidebar and body columns becoming
-          squished on a smaller screen?
-        </p>
+        <div class="sample-img" id="title">
+        </div>
+        <h2>5-Day Forecast</h2>
+        <div class="card-container" id="forecast">
+          <div class="card" id="card-1"></div>
+          <div class="card" id="card-2"></div>
+          <div class="card" id="card-3"></div>
+          <div class="card" id="card-4"></div>
+          <div class="card" id="card-5"></div>
+        </div>
+
+
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
-      </h3>
+      <p>Made By Gavin McNutt using OpenWeatherMap API</p>
     </footer>
-  </body>
+  <script src="assets/script.js"></script>
+    </body>
 </html>
