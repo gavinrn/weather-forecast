@@ -1,6 +1,6 @@
 # Weather Dashboard 
 
-A weather dashboard that uses the [openweathermap]([openweathermap.org](https://openweathermap.org/))
+A weather dashboard that uses the [openweathermap](https://openweathermap.org/))
 
 ## Table of Contents
 
